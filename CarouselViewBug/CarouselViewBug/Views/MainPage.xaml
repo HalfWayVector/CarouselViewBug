@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CarouselViewBug.MainPage">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <CarouselView Grid.Row="0"
+                      Grid.Column="0"
+                      ItemsSource="{Binding Items}"
+                      PositionChangedCommand="{Binding PositionChangedCommand}"
+                      Position="{Binding CurrentPage}"
+                      PeekAreaInsets="60">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <ContentView Padding="5">
+                        <Frame BackgroundColor="Beige" CornerRadius="20">
+                            <Label Text="{Binding Message}" />
+                        </Frame>
+                    </ContentView>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               Text="{Binding PageIndicator}"
+               TextColor="DodgerBlue"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               VerticalOptions="End" />
+    </Grid>
+</ContentPage>
