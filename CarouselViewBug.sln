@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarouselViewBug.Android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarouselViewBug.iOS", "CarouselViewBug\CarouselViewBug.iOS\CarouselViewBug.iOS.csproj", "{2AA3DE96-570B-4390-8A4E-89AE81AD691C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarouselViewBug", "CarouselViewBug\CarouselViewBug\CarouselViewBug.csproj", "{C54987D0-7968-4325-B103-08CC2180F0A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarouselViewBug", "CarouselViewBug\CarouselViewBug\CarouselViewBug.csproj", "{C54987D0-7968-4325-B103-08CC2180F0A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27C52809-455D-4A7B-9722-61596C35CE7B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
