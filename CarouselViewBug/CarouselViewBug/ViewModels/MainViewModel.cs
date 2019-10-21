@@ -48,10 +48,10 @@ namespace CarouselViewPeekAreaInsetsBug.ViewModels
 
             Items = new List<MyCarouselItem>()
             {
-                new MyCarouselItem() { Message = "This is item #1" },
-                new MyCarouselItem() { Message = "This is item #2" },
-                new MyCarouselItem() { Message = "This is item #3" },
-                new MyCarouselItem() { Message = "This is item #4" }
+                new MyCarouselItem() { Message = "This is item #1 and page info below updates accordingly." },
+                new MyCarouselItem() { Message = "This is item #2 and page info below updates accordingly." },
+                new MyCarouselItem() { Message = "This is item #3 and page info below updates accordingly." },
+                new MyCarouselItem() { Message = "This is item #4 BUT page info below DOES NOT update accordingly if PeekAreaInsets is not zero. Change PeekAreaInsets to zero and everyting will be OK." }
             };
 
             PageIndicator = $"{(CurrentPage + 1).ToString()} of {Items.Count}";
